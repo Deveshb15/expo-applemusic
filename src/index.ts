@@ -6,15 +6,12 @@ import ExpoApplemusicModule from './ExpoApplemusicModule';
 import ExpoApplemusicView from './ExpoApplemusicView';
 import { ChangeEventPayload, ExpoApplemusicViewProps } from './ExpoApplemusic.types';
 
-// Get the native constant value.
-export const PI = ExpoApplemusicModule.PI;
-
-export function hello(): string {
-  return ExpoApplemusicModule.hello();
-}
-
 export async function setValueAsync(value: string) {
   return await ExpoApplemusicModule.setValueAsync(value);
+}
+
+export async function fetchUserToken(developerToken: string) {
+  return await ExpoApplemusicModule.fetchUserToken(developerToken);
 }
 
 const emitter = new EventEmitter(ExpoApplemusicModule ?? NativeModulesProxy.ExpoApplemusic);
