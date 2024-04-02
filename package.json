@@ -1,5 +1,5 @@
 {
-  "name": "expo-applemusic",
+  "name": "@deveshb15/expo-applemusic",
   "version": "0.1.0",
   "description": "AppleMusic expo module to get user token and much more",
   "main": "build/index.js",
