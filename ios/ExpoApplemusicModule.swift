@@ -18,17 +18,17 @@ public class ExpoApplemusicModule: Module {
             return token
           case .denied, .restricted, .notDetermined:
             print("Authorization status not appropriate")
-            return ""
+            return "Authorization status not appropriate"
           @unknown default:
             print("Unknown authorization status")
-            return ""
+            return "Unknown authorization status"
           }
         } else {
           // Fallback on earlier versions
-          return ""
+          return "Fallback on earlier versions"
         }
       } catch {
-        return ""
+        return "failed to execute"
       }
     }
     
